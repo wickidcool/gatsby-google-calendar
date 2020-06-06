@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-plugin-google-calendar",
+  "name": "gatsby-source-google-calendar",
   "version": "0.3.0",
   "description": "Google calendar plugin for Gatsby",
   "license": "MIT",
@@ -17,5 +17,18 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/wickidcool/gatsby-source-google-calendar"
+  },
+  "dependencies": {
+    "googleapis": "52.1.0",
+    "gatsby-source-filesystem": "^2.3.8",
+    "moment": "2.26.0",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.4",
+    "@babel/node": "7.8.4",
+    "@babel/plugin-transform-spread": "^7.8.3",
+    "@babel/cli": "7.8.4",
+    "@babel/preset-env": "7.8.4"
   }
 }

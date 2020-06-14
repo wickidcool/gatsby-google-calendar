@@ -5,7 +5,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "build": "babel -d ./ ./src",
+    "build": "NODE_ENV=test && babel -d ./ ./src/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -19,16 +19,19 @@
     "url": "https://github.com/wickidcool/gatsby-source-google-calendar"
   },
   "dependencies": {
-    "googleapis": "52.1.0",
-    "gatsby-source-filesystem": "^2.3.8",
-    "moment": "2.26.0",
+    "gatsby": "^2.22.12",
+    "googleapis": "^52.1.0",
+    "moment": "^2.26.0",
     "uuid": "^7.0.2"
   },
   "devDependencies": {
-    "@babel/core": "7.8.4",
-    "@babel/node": "7.8.4",
-    "@babel/plugin-transform-spread": "^7.8.3",
-    "@babel/cli": "7.8.4",
-    "@babel/preset-env": "7.8.4"
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/plugin-transform-spread": "7.10.1",
+    "@babel/cli": "7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.0.6",
+    "babel-preset-gatsby": "^0.2.27",
+    "prettier": "^1.19.1"
   }
 }

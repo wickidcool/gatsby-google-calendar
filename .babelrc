@@ -1,0 +1,18 @@
+{
+  "plugins": [
+    "@babel/plugin-transform-spread",
+    "@babel/plugin-proposal-optional-chaining"
+  ],
+  "presets": [
+    [
+      "@babel/preset-env", {
+        "useBuiltIns": "usage",
+        "debug": false,
+        "corejs": 3,
+        "targets": {
+          "browsers": [">0.25%", "not dead"]
+        }
+      }
+    ]
+  ]
+}

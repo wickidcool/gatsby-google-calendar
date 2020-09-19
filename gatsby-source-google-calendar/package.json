@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-source-google-calendar",
-  "version": "0.3.0",
+  "name": "@wickidcool/gatsby-source-google-calendar",
+  "version": "0.3.4",
   "description": "Google calendar plugin for Gatsby",
   "license": "MIT",
   "main": "index.js",
@@ -15,6 +15,9 @@
     "google-calendar"
   ],
   "author": "Allan Wick <al@wickidcool.com>",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wickidcool/gatsby-source-google-calendar"
